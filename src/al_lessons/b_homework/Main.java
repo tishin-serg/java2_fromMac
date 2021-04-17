@@ -10,15 +10,15 @@ public class Main {
     static int sum = 0;
 
     public static void main(String[] args) {
-
         try {
             intMatrix = convertToIntMatrix(stringMatrix);
             if (checkMatrixSize(stringMatrix) | checkDataArray(stringMatrix)) {System.out.println(sum);}
         } catch (MyArrayDataException | MyArraySizeException e) {
             e.printStackTrace();
         }
-
     }
+
+
 
     private static int[][] convertToIntMatrix(String[][] matrix) {
 
